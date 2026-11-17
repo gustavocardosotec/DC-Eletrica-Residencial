@@ -1,0 +1,60 @@
+<p align="center">
+  <img src="icon-192.png" alt="Logo da DC Elétrica Residencial" width="120">
+</p>
+
+<h1 align="center">DC Elétrica Residencial</h1>
+
+<p align="center">
+  Site oficial da DC Elétrica Residencial, eletricista em Pederneiras-SP e região.<br>
+  <a href="https://dceletric.com.br"><strong>dceletric.com.br</strong></a>
+</p>
+
+---
+
+## Sobre o projeto
+
+Este é o site institucional da **DC Elétrica Residencial**, empresa de instalações e manutenção elétrica residencial que atende Pederneiras-SP e cidades vizinhas.
+
+O site apresenta os serviços, mostra trabalhos realizados e leva o cliente direto ao WhatsApp para pedir orçamento. É uma página única, leve e feita para funcionar bem no celular.
+
+**Acesse:** [https://dceletric.com.br](https://dceletric.com.br)
+
+## Serviços da empresa
+
+- Quadros de distribuição (QDC), com disjuntores, DR e DPS
+- Tomadas e interruptores
+- Projetos de iluminação e LED
+- Refletores e iluminação externa
+- Padrão de entrada (CPFL / concessionária)
+- Instalação de chuveiros
+- Manutenção geral e correção de curtos-circuitos
+- Infraestrutura e eletrodutos
+
+## Sobre mim
+
+Meu nome é **Gustavo Vicente Cardoso**, sou o fundador da DC Elétrica Residencial. Trabalho com elétrica residencial com foco em segurança, acabamento limpo e atendimento direto com o cliente. O lema da empresa é "Precisou, chamou!".
+
+## Contato
+
+- **Site:** [dceletric.com.br](https://dceletric.com.br)
+- **WhatsApp:** (14) 92009-5531
+- **Instagram:** [@dceletrica.residencial](https://www.instagram.com/dceletrica.residencial/)
+- **Atendimento:** Pederneiras-SP e região
+
+## Estrutura dos arquivos
+
+| Arquivo | Descrição |
+|---|---|
+| `index.html` | Página do site |
+| `favicon.ico` e `favicon-*.png` | Ícones da aba do navegador |
+| `apple-touch-icon.png`, `icon-192.png`, `icon-512.png` | Ícones para celular |
+| `og-image.png` | Imagem de prévia ao compartilhar o link |
+| `site.webmanifest`, `robots.txt`, `sitemap.xml` | Arquivos para navegadores e buscadores |
+
+## Créditos e direitos
+
+Criação, conteúdo, logo, fotos e marca: **Gustavo Vicente Cardoso**.
+
+© 2026 Gustavo Vicente Cardoso, DC Elétrica Residencial. **Todos os direitos reservados.**
+
+Este repositório é público apenas para visualização. Não é permitido copiar, modificar, redistribuir ou usar o código, as imagens, a logo ou o nome da marca, no todo ou em parte, sem autorização por escrito do autor. Para pedir autorização, entre em contato pelos canais acima.
