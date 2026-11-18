@@ -256,22 +256,20 @@ const WHATSAPP_NUMBER = "5514920095531";
     var d={nome:f.nome.value.trim(),telefone:f.telefone.value.trim(),local:f.local.value.trim(),assunto:f.assunto.value,mensagem:f.mensagem.value.trim()};
     if(f.botcheck.checked) return;
     btn.disabled=true; btn.textContent="Enviando...";
-    var texto="Olá! Vim pelo site e gostaria de falar com a DC Elétrica.\n\n"+
-      "*Nome:* "+d.nome+"\n*Telefone:* "+d.telefone+"\n*Local:* "+d.local+"\n*Assunto:* "+d.assunto+"\n*Mensagem:* "+d.mensagem;
-    var url="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(texto);
-    // a) registro por e-mail (silencioso)
-    var req=fetch("https://api.web3forms.com/submit",{method:"POST",keepalive:true,
+    fetch("https://api.web3forms.com/submit",{method:"POST",
       headers:{"Content-Type":"application/json",Accept:"application/json"},
       body:JSON.stringify({access_key:WEB3FORMS_ACCESS_KEY,subject:"Novo contato pelo site: "+d.assunto,from_name:"Site DC Elétrica",
-        name:d.nome,telefone:d.telefone,local:d.local,assunto:d.assunto,message:d.mensagem,botcheck:""})}).catch(function(){});
-    // b) abre o WhatsApp em nova aba, independente do resultado do fetch
-    var w=window.open(url,"_blank");
-    Promise.resolve(req).then(function(){
-      // c) limpa e confirma
-      form.reset();
+        name:d.nome,telefone:d.telefone,local:d.local,assunto:d.assunto,message:d.mensagem,botcheck:""})})
+    .then(function(r){ return r.json().then(function(j){ return r.ok && j.success; }); })
+    .catch(function(){ return false; })
+    .then(function(sucesso){
       btn.disabled=false; btn.textContent=btnText;
-      ok.innerHTML="✓ Mensagem enviada! Se o WhatsApp não abriu, <a href=\""+url+"\" target=\"_blank\" rel=\"noopener\">toque aqui</a>.";
-      if(w) ok.textContent="✓ Mensagem enviada! Continue a conversa no WhatsApp.";
+      if(sucesso){
+        form.reset();
+        ok.textContent="✓ Formulário enviado! Daremos retorno em breve.";
+      } else {
+        ok.textContent="Não foi possível enviar agora. Tente novamente ou chame no WhatsApp: (14) 92009-5531.";
+      }
       ok.hidden=false;
     });
   });

@@ -24,7 +24,7 @@ O site apresenta os serviços, mostra trabalhos realizados e leva o cliente dire
 ## Novidades da versão 1.1
 
 - Nova seção **Fale Conosco**, com formulário de contato (nome, telefone, bairro/cidade, assunto e mensagem).
-- Ao enviar, a mensagem chega por e-mail para a empresa e o WhatsApp abre com o texto já preenchido.
+- Ao enviar, a mensagem chega direto por e-mail para a empresa, e o cliente vê a confirmação na própria página.
 - Canais diretos (WhatsApp, Instagram, área e horário de atendimento) e mapa de Pederneiras-SP.
 - Link "Contato" do menu leva à nova seção com rolagem suave.
 - Ícone do topo do site corrigido: agora usa a logo com fundo branco.
