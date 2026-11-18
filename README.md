@@ -29,6 +29,7 @@ O site apresenta os serviços, mostra trabalhos realizados e leva o cliente dire
 - Botão flutuante do WhatsApp sempre visível no canto inferior direito, grande, verde neon e pulsante (brilho e ondas que chamam o olhar). No celular ele é um pouco menor, para não ocupar a tela.
 - Novo botão "Fazer avaliação no Google" abaixo dos botões da primeira tela, com ícone de estrela, que leva direto para a avaliação da empresa.
 - Novo botão discreto **"Indicar para um amigo"** no rodapé. No celular abre o compartilhamento nativo (WhatsApp, Instagram, mensagens...) já com o link `https://dceletric.com.br`; no computador copia o link e mostra "Link copiado!".
+- Logo e ícones (aba do navegador, celular e topo do site) refeitos sem recorte: a casa e o plugue aparecem inteiros, num quadrado branco de cantos arredondados.
 - Imagem do topo do site trocada pelo folheto da empresa (serviços, equipe e contatos).
 - Mensagem do WhatsApp atualizada: "Olá! Vim pelo site e gostaria de um Orçamento (Agendar visita técnica)".
 - Rodapé: o crédito "Desenvolvido por Gustavo Cardoso" agora leva ao Instagram do desenvolvedor, com um ícone pequeno e discreto ao lado.
