@@ -9,6 +9,8 @@
   <a href="https://dceletric.com.br"><strong>dceletric.com.br</strong></a>
 </p>
 
+<p align="center"><strong>Versão 1.1</strong></p>
+
 ---
 
 ## Sobre o projeto
@@ -18,6 +20,15 @@ Este é o site institucional da **DC Elétrica Residencial**, empresa de instala
 O site apresenta os serviços, mostra trabalhos realizados e leva o cliente direto ao WhatsApp para pedir orçamento. É uma página única, leve e feita para funcionar bem no celular.
 
 **Acesse:** [https://dceletric.com.br](https://dceletric.com.br)
+
+## Novidades da versão 1.1
+
+- Nova seção **Fale Conosco**, com formulário de contato (nome, telefone, bairro/cidade, assunto e mensagem).
+- Ao enviar, a mensagem chega por e-mail para a empresa e o WhatsApp abre com o texto já preenchido.
+- Canais diretos (WhatsApp, Instagram, área e horário de atendimento) e mapa de Pederneiras-SP.
+- Link "Contato" do menu leva à nova seção com rolagem suave.
+- Ícone do topo do site corrigido: agora usa a logo com fundo branco.
+- Ícones do navegador e do celular atualizados com a logo em fundo branco.
 
 ## Serviços da empresa
 
@@ -47,7 +58,7 @@ Meu nome é **Gustavo Vicente Cardoso**, trabalho na DC Elétrica Residencial. T
 |---|---|
 | `index.html` | Página do site |
 | `favicon.ico` e `favicon-*.png` | Ícones da aba do navegador |
-| `apple-touch-icon.png`, `icon-192.png`, `icon-512.png` | Ícones para celular |
+| `apple-touch-icon.png`, `icon-192.png`, `icon-512.png` | Ícones para celular e logo do site |
 | `og-image.png` | Imagem de prévia ao compartilhar o link |
 | `site.webmanifest`, `robots.txt`, `sitemap.xml` | Arquivos para navegadores e buscadores |
 
