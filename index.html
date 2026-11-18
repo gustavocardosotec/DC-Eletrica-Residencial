@@ -90,7 +90,20 @@ h2{font-size:clamp(28px,4.5vw,44px);margin:0 0 10px;letter-spacing:-.015em;line-
 .field input:focus-visible,.field select:focus-visible,.field textarea:focus-visible{outline:3px solid var(--brand);outline-offset:1px;border-color:var(--brand)}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 .form-actions{margin-top:22px}
-button.btn{border:0;font:inherit;font-weight:700;cursor:pointer}
+button.btn{border:2px solid var(--brand);font:inherit;font-weight:700;cursor:pointer}
+.form-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+.form-actions{align-items:center}
+.form-actions .btn{display:inline-flex;align-items:center;justify-content:center;text-align:center}
+#cf-btn{flex:1 1 170px;min-height:52px;padding:10px 20px;font-size:15px;background:transparent;color:var(--text);border:2px solid var(--brand)}
+#cf-btn:hover{background:var(--brand);color:var(--navy)}
+#cf-wa{flex:1.7 1 280px;min-height:70px;padding:14px 26px;font-size:18px;box-shadow:0 6px 18px rgba(37,211,102,.35)}
+#cf-wa .wa-t small{font-size:13px}
+.wa-t{display:flex;flex-direction:column;align-items:flex-start;line-height:1.2;text-align:left;font-weight:800}
+.wa-t small{font-size:12px;font-weight:600;opacity:.8}
+button.btn.wa{gap:12px;background:#25D366;border-color:#25D366;color:var(--navy);transition:transform .15s,background .15s,border-color .15s}
+button.btn.wa:hover{background:#1ebe5b;border-color:#1ebe5b}
+button.btn.wa img{flex:none;display:block}
+@media(max-width:560px){.form-actions .btn{flex-basis:100%}#cf-wa{order:-1}}
 button.btn:disabled{opacity:.7;cursor:wait;transform:none}
 .form-ok{margin-top:16px;padding:12px 14px;border-left:4px solid var(--brand);background:var(--bg);border-radius:0 6px 6px 0;font-size:15px}
 .form-ok[hidden]{display:none}
@@ -191,7 +204,7 @@ footer a{color:#fff}
         <div class="field full"><label for="cf-msg">Mensagem *</label><textarea id="cf-msg" name="mensagem" required placeholder="Descreva o serviço que você precisa"></textarea></div>
       </div>
       <input class="hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <div class="form-actions"><button class="btn" type="submit" id="cf-btn">Enviar mensagem →</button></div>
+      <div class="form-actions"><button class="btn" type="submit" id="cf-btn">Enviar Formulário →</button><button class="btn wa" type="button" id="cf-wa"><img src="data:image/png;base64,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" alt="" width="34" height="34"><span class="wa-t">Enviar via WhatsApp<small>Mais rápido</small></span></button></div>
       <div class="form-ok" id="cf-ok" role="status" aria-live="polite" hidden></div>
     </form>
   </div>
@@ -247,14 +260,29 @@ const WHATSAPP_NUMBER = "5514920095531";
     return r;
   }
   tel.addEventListener("input",function(){ tel.value=mask(tel.value); tel.setCustomValidity(""); });
-  form.addEventListener("submit",function(e){
-    e.preventDefault();
+  function coletar(){
     ok.hidden=true;
     if(tel.value.replace(/\D/g,"").length<10) tel.setCustomValidity("Informe o telefone com DDD."); else tel.setCustomValidity("");
-    if(!form.checkValidity()){ form.reportValidity(); return; }
+    if(!form.checkValidity()){ form.reportValidity(); return null; }
     var f=form.elements;
-    var d={nome:f.nome.value.trim(),telefone:f.telefone.value.trim(),local:f.local.value.trim(),assunto:f.assunto.value,mensagem:f.mensagem.value.trim()};
-    if(f.botcheck.checked) return;
+    if(f.botcheck.checked) return null;
+    return {nome:f.nome.value.trim(),telefone:f.telefone.value.trim(),local:f.local.value.trim(),assunto:f.assunto.value,mensagem:f.mensagem.value.trim()};
+  }
+  var waBtn=document.getElementById("cf-wa");
+  waBtn.addEventListener("click",function(){
+    var d=coletar(); if(!d) return;
+    var texto="Olá! Vim pelo site e gostaria de falar com a DC Elétrica.\n\n"+
+      "*Nome:* "+d.nome+"\n*Telefone:* "+d.telefone+"\n*Local:* "+d.local+"\n*Assunto:* "+d.assunto+"\n*Mensagem:* "+d.mensagem;
+    var url="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(texto);
+    var w=window.open(url,"_blank");
+    form.reset();
+    if(w) ok.textContent="✓ WhatsApp aberto! É só enviar a mensagem por lá.";
+    else ok.innerHTML="Não conseguimos abrir o WhatsApp automaticamente. <a href=\""+url+"\" target=\"_blank\" rel=\"noopener\">Toque aqui para abrir</a>.";
+    ok.hidden=false;
+  });
+  form.addEventListener("submit",function(e){
+    e.preventDefault();
+    var d=coletar(); if(!d) return;
     btn.disabled=true; btn.textContent="Enviando...";
     fetch("https://api.web3forms.com/submit",{method:"POST",
       headers:{"Content-Type":"application/json",Accept:"application/json"},
