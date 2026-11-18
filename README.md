@@ -66,7 +66,7 @@ O site apresenta os serviços, mostra trabalhos realizados e leva o cliente dire
 
 ## Sobre mim
 
-Meu nome é **Gustavo Vicente Cardoso**, trabalho na DC Elétrica Residencial. Trabalho com elétrica residencial com foco em segurança, acabamento limpo e atendimento direto com o cliente. O lema da empresa é "Precisou, chamou!".
+Meu nome é **Gustavo Vicente Cardoso**, trabalho na DC Elétrica Residencial. Trabalho com elétrica residencial com foco em segurança, acabamento limpo e atendimento direto com o cliente. O lema da empresa é "Energia Segura".
 
 ## Contato
 
