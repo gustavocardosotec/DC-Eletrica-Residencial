@@ -26,6 +26,8 @@ O site apresenta os serviços, mostra trabalhos realizados e leva o cliente dire
 - Novo botão discreto **"Salvar na agenda"** na seção Fale Conosco, logo abaixo do telefone da empresa.
 - Com um toque, o celular do cliente abre a tela de novo contato já com o nome **DC Elétrica Residencial** e o número preenchidos, sem precisar digitar nada. No Android abre direto no app de Contatos; no iPhone abre o cartão do contato; no computador baixa o arquivo `.vcf`. Tudo é gerado na hora pelo navegador, sem servidor e sem enviar dados para lugar nenhum.
 - O botão tem um leve brilho pulsante para chamar a atenção sem incomodar (e para quando a pessoa passa o mouse ou usa a opção de reduzir movimento do aparelho).
+- Botão flutuante do WhatsApp sempre visível no canto inferior direito, grande, verde neon e pulsante (brilho e ondas que chamam o olhar). No celular ele é um pouco menor, para não ocupar a tela.
+- Novo botão "Fazer avaliação no Google" abaixo dos botões da primeira tela, com ícone de estrela, que leva direto para a avaliação da empresa.
 - Mensagem do WhatsApp atualizada: "Olá! Vim pelo site e gostaria de um Orçamento (Agendar visita técnica)".
 - Rodapé: o crédito "Desenvolvido por Gustavo Cardoso" agora leva ao Instagram do desenvolvedor, com um ícone pequeno e discreto ao lado.
 
