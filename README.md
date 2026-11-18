@@ -50,6 +50,7 @@ O site apresenta os serviços, mostra trabalhos realizados e leva o cliente dire
 - Instalação de chuveiros
 - Manutenção geral e correção de curtos-circuitos
 - Infraestrutura e eletrodutos
+- Obras em geral, com a elétrica completa da casa
 
 ## Sobre mim
 
