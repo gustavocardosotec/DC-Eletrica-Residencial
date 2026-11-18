@@ -40,6 +40,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 nav a{color:#cfd6e6;text-decoration:none;margin-left:24px;font-size:15px;padding:6px 0}
 nav a:hover,nav a.on{color:#fff;box-shadow:0 2px var(--brand)}
 a:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+section:focus,section:focus-visible{outline:none}
 .btn{display:inline-block;padding:14px 26px;border-radius:6px;font-weight:700;text-decoration:none;background:var(--brand);color:var(--navy);transition:transform .15s}
 .btn:hover{transform:translateY(-2px)}
 .btn.ghost{background:transparent;color:inherit;border:2px solid currentColor}
@@ -364,6 +365,24 @@ const WHATSAPP_NUMBER = "5514920095531";
   window.addEventListener("resize",pedir);
   window.addEventListener("load",pedir);
   atualizar();
+})();
+// Links internos rolam até a seção sem colocar #servicos, #trabalhos etc. no endereço do site
+(function(){
+  var reduz=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.addEventListener("click",function(e){
+    var a=e.target.closest?e.target.closest('a[href^="#"]'):null;
+    if(!a) return;
+    var h=a.getAttribute("href");
+    var el=h.length>1?document.getElementById(h.slice(1)):null;
+    e.preventDefault();
+    var modo=reduz?"auto":"smooth";
+    if(el){
+      el.scrollIntoView({behavior:modo,block:"start"});
+      if(!el.hasAttribute("tabindex")) el.setAttribute("tabindex","-1");
+      try{ el.focus({preventScroll:true}); }catch(_){}
+    } else { window.scrollTo({top:0,behavior:modo}); }
+  });
+  if(location.hash) history.replaceState(null,"",location.pathname+location.search);
 })();
 </script>
 </body>
