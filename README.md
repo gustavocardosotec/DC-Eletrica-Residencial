@@ -28,6 +28,7 @@ O site apresenta os serviços, mostra trabalhos realizados e leva o cliente dire
 - No computador, o menu do topo também mostra uma barrinha amarela na seção atual.
 - Galeria de trabalhos em carrossel: basta deslizar para o lado, sem rolar a tela por várias fotos grandes.
 - Textos, espaçamentos e cartões mais compactos no celular.
+- Botão com o ícone do Instagram ao lado de "Ver trabalhos", na primeira tela do site.
 
 ## Novidades da versão 1.1
 
