@@ -9,7 +9,7 @@
   <a href="https://dceletric.com.br"><strong>dceletric.com.br</strong></a>
 </p>
 
-<p align="center"><strong>Versão 1.1</strong></p>
+<p align="center"><strong>Versão 1.2</strong></p>
 
 ---
 
@@ -20,6 +20,13 @@ Este é o site institucional da **DC Elétrica Residencial**, empresa de instala
 O site apresenta os serviços, mostra trabalhos realizados e leva o cliente direto ao WhatsApp para pedir orçamento. É uma página única, leve e feita para funcionar bem no celular.
 
 **Acesse:** [https://dceletric.com.br](https://dceletric.com.br)
+
+## Novidades da versão 1.2
+
+- Novo layout para celular: o cliente chega ao orçamento muito mais rápido.
+- Barra de navegação rápida fixa no topo (Serviços, Trabalhos e Contato), com destaque para a seção em que o cliente está.
+- Galeria de trabalhos em carrossel: basta deslizar para o lado, sem rolar a tela por várias fotos grandes.
+- Textos, espaçamentos e cartões mais compactos no celular.
 
 ## Novidades da versão 1.1
 
