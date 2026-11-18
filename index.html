@@ -38,7 +38,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 .logo img{width:44px;height:44px;border-radius:50%;background:#fff;object-fit:contain}
 .logo small{display:block;font-weight:500;font-size:12px;color:var(--brand)}
 nav a{color:#cfd6e6;text-decoration:none;margin-left:24px;font-size:15px;padding:6px 0}
-nav a:hover{color:#fff;box-shadow:0 2px var(--brand)}
+nav a:hover,nav a.on{color:#fff;box-shadow:0 2px var(--brand)}
 a:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
 .btn{display:inline-block;padding:14px 26px;border-radius:6px;font-weight:700;text-decoration:none;background:var(--brand);color:var(--navy);transition:transform .15s}
 .btn:hover{transform:translateY(-2px)}
@@ -215,7 +215,7 @@ footer a{color:#fff}
   </div>
 </div></section>
 
-<section class="why"><div class="wrap">
+<section class="why" id="porque"><div class="wrap">
   <h2>Por que escolher a DC Elétrica</h2>
   <p class="sub">Segurança não se improvisa.</p>
   <div class="grid">
@@ -341,16 +341,29 @@ const WHATSAPP_NUMBER = "5514920095531";
 })();
 </script>
 <script>
+// Destaque da seção atual no menu: calculado pela posição real de cada seção na página
 (function(){
-  var links=[].slice.call(document.querySelectorAll(".qnav a"));
-  if(!links.length||!("IntersectionObserver" in window)) return;
-  var io=new IntersectionObserver(function(es){
-    es.forEach(function(e){
-      if(!e.isIntersecting) return;
-      links.forEach(function(a){ a.classList.toggle("on",!a.classList.contains("go")&&a.getAttribute("href")==="#"+e.target.id); });
+  var header=document.querySelector("header");
+  var links=[].slice.call(document.querySelectorAll("header nav a, .qnav a"));
+  var ids=["servicos","trabalhos","porque","contato","chamar"];
+  var alvo={servicos:"servicos",trabalhos:"trabalhos",porque:null,contato:"contato",chamar:"contato"};
+  var secs=ids.map(function(id){return document.getElementById(id);}).filter(Boolean);
+  var agendado=false;
+  function atualizar(){
+    agendado=false;
+    var linha=header.getBoundingClientRect().bottom+Math.round(window.innerHeight*0.2);
+    var atual=null;
+    for(var i=0;i<secs.length;i++){ if(secs[i].getBoundingClientRect().top<=linha) atual=secs[i].id; }
+    var destino=atual?alvo[atual]:null;
+    links.forEach(function(a){
+      a.classList.toggle("on",destino!==null&&!a.classList.contains("go")&&a.getAttribute("href")==="#"+destino);
     });
-  },{rootMargin:"-30% 0px -60% 0px"});
-  links.forEach(function(a){ var el=document.querySelector(a.getAttribute("href")); if(el) io.observe(el); });
+  }
+  function pedir(){ if(!agendado){ agendado=true; requestAnimationFrame(atualizar); } }
+  window.addEventListener("scroll",pedir,{passive:true});
+  window.addEventListener("resize",pedir);
+  window.addEventListener("load",pedir);
+  atualizar();
 })();
 </script>
 </body>

@@ -25,6 +25,7 @@ O site apresenta os serviços, mostra trabalhos realizados e leva o cliente dire
 
 - Novo layout para celular: o cliente chega ao orçamento muito mais rápido.
 - Barra de navegação rápida fixa no topo (Serviços, Trabalhos e Contato), com destaque para a seção em que o cliente está.
+- No computador, o menu do topo também mostra uma barrinha amarela na seção atual.
 - Galeria de trabalhos em carrossel: basta deslizar para o lado, sem rolar a tela por várias fotos grandes.
 - Textos, espaçamentos e cartões mais compactos no celular.
 
