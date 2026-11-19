@@ -21,6 +21,15 @@ O site apresenta os serviços, mostra trabalhos realizados e leva o cliente dire
 
 **Acesse:** [https://dceletric.com.br](https://dceletric.com.br)
 
+## Novidades da versão 1.4
+
+- **Nova seção "Disjuntor, DR e DPS: qual a diferença?":** fica logo depois de "Sinais de que sua instalação precisa de revisão". Explica em uma frase simples o papel de cada proteção do quadro de luz, para o cliente entender por que só o disjuntor não basta.
+- Três cartões com imagem ilustrativa de cada peça: o **disjuntor** (protege a fiação contra sobrecarga e curto-circuito, discreto e sem destaque), o **DR** (protege pessoas contra choque por fuga de corrente) e o **DPS** (protege aparelhos contra raios e picos de tensão). O DR e o DPS levam borda amarela e etiqueta, para ganhar destaque sem chamar mais atenção que os serviços.
+- Cada cartão tem uma linha "Evita:" com o problema concreto que a proteção resolve (choque no chuveiro, geladeira e TV queimando em tempestade, risco de incêndio).
+- No celular os cartões ficam empilhados e compactos, com a imagem pequena ao lado do texto. As cores acompanham o tema claro e escuro do site.
+- Link no fim da seção que abre o WhatsApp com a mensagem pronta "gostaria de saber sobre instalação de DR e DPS no meu quadro de luz".
+- Imagens otimizadas (WebP) e embutidas no próprio `index.html`, sem peso extra. A seção também entrou no destaque automático do menu.
+
 ## Novidades da versão 1.3
 
 - Novo botão discreto **"Salvar na agenda"** na seção Fale Conosco, logo abaixo do telefone da empresa.
