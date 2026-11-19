@@ -30,6 +30,7 @@ O site apresenta os serviços, mostra trabalhos realizados e leva o cliente dire
 - Novo botão "Fazer avaliação no Google" abaixo dos botões da primeira tela, com ícone de estrela, que leva direto para a avaliação da empresa.
 - Novo botão discreto **"Indicar para um amigo"** no rodapé. No celular abre o compartilhamento nativo (WhatsApp, Instagram, mensagens...) já com o link `https://dceletric.com.br`; no computador copia o link e mostra "Link copiado!".
 - Logo e ícones (aba do navegador, celular e topo do site) refeitos sem recorte: a casa e o plugue aparecem inteiros, num quadrado branco de cantos arredondados.
+- Marca de direitos autorais "© DC Elétrica" aplicada direto na imagem, no canto superior direito, em todas as fotos de trabalhos e no folheto do topo. A logo (ícones da aba do navegador, do celular e do topo do site) e a imagem de prévia do link (`og-image.png`) levam um pequeno "©" ao lado do telhado, no alto à direita.
 - Imagem do topo do site trocada pelo folheto da empresa (serviços, equipe e contatos).
 - Mensagem do WhatsApp atualizada: "Olá! Vim pelo site e gostaria de um Orçamento (Agendar visita técnica)".
 - Rodapé: o crédito "Desenvolvido por Gustavo Cardoso" agora leva ao Instagram do desenvolvedor, com um ícone pequeno e discreto ao lado.
