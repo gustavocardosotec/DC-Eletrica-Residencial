@@ -36,7 +36,7 @@ O site apresenta os serviços, mostra trabalhos realizados e leva o cliente dire
 - Rodapé: o crédito "Desenvolvido por Gustavo Cardoso" agora leva ao Instagram do desenvolvedor, com um ícone pequeno e discreto ao lado.
 - **Botão do WhatsApp em cada serviço:** cada card da seção Serviços ganhou um ícone verde do WhatsApp. Ao tocar, a conversa abre já com uma mensagem pronta sobre aquele serviço, por exemplo "Olá! Vim pelo site e gostaria de um orçamento para instalação de chuveiro.". O cliente pede orçamento sem precisar explicar tudo do zero.
 - **Ícone do Instagram em "Veja mais":** na seção Trabalhos, o texto "Veja mais no nosso Instagram" agora é um link, com o ícone do Instagram ao lado.
-- **Formas de pagamento:** novo aviso no fim da seção Serviços mostrando que a empresa aceita Pix, dinheiro, cartão de débito e cartão de crédito, inclusive nos serviços maiores, como troca de QDC e padrão de entrada. A informação também foi incluída nos dados do site para o Google.
+- **Formas de pagamento:** novo aviso no fim da seção Serviços mostrando que a empresa aceita Pix, dinheiro, cartão de débito e cartão de crédito. A informação também foi incluída nos dados do site para o Google.
 - **Sinais de que sua instalação precisa de revisão:** nova seção com um checklist de 8 sinais comuns (tomada esquentando, disjuntor desarmando, cheiro de queimado, choque leve, lâmpadas piscando, chuveiro desligando, quadro antigo e excesso de extensões), cada um com uma explicação curta. Inclui um aviso de segurança e um botão que chama no WhatsApp com a mensagem "notei alguns sinais na minha instalação elétrica", para o cliente se identificar e pedir uma avaliação na hora.
 
 ## Novidades da versão 1.2
